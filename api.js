@@ -1,3 +1,4 @@
+const {PAGE_ACCESS_TOKEN} = require('./config/bootstrap')
 const request = require('request')
 /*
  * Call the Send API. The message data goes in the body. If successful, we'll
