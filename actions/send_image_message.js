@@ -21,4 +21,4 @@ function sendImageMessage(recipientId) {
   callSendAPI(messageData);
 }
 
-module.ex
+module.exports = sendImageMessage
