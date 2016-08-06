@@ -25,10 +25,10 @@ const {
   sendImageMessage,
   sendVideoMessage,
   sendTextMessage,
+  sendReceiptMessage,
 
   sendReadReceipt,
   sendQuickReply,
-  sendReceipt,
   sendTypingOff,
   sendTypingOn
 } = require('./actions')

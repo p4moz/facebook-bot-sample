@@ -6,10 +6,10 @@ const sendGifMessage = require('./send_gif_message')
 const sendImageMessage = require('./send_image_message')
 const sendTextMessage = require('./send_text_message')
 const sendVideoMessage = require('./send_video_message')
+const sendReceiptMessage = require('./send_receipt_message')
 
 const sendReadReceipt = require('./send_read_receipt')
 const sendQuickReply = require('./send_quick_reply')
-const sendReceipt = require('./send_receipt')
 const sendTypingOff = require('./send_typing_off')
 const sendTypingOn = require('./send_typing_on')
 
@@ -22,10 +22,10 @@ module.exports = {
   sendImageMessage,
   sendVideoMessage,
   sendTextMessage,
+  sendReceiptMessage,
 
   sendReadReceipt,
   sendQuickReply,
-  sendReceipt,
   sendTypingOff,
   sendTypingOn
 }
