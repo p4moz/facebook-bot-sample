@@ -1,4 +1,4 @@
-const callSendAPI = require('../api')
+const callSendAPI = require('../config/api')
 /*
  * Send a Structured Message (Generic Message type) using the Send API.
  *

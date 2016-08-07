@@ -1,4 +1,4 @@
-const callSendAPI = require('../api')
+const callSendAPI = require('../config/api')
 
 /*
  * Send a read receipt to indicate the message has been read

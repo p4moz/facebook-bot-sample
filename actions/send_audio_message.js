@@ -1,4 +1,4 @@
-const callSendAPI = require('../api')
+const callSendAPI = require('../config/api')
 /*
  * Send audio using the Send API.
  *

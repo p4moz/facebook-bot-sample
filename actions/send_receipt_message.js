@@ -1,4 +1,4 @@
-const callSendAPI = require('../api')
+const callSendAPI = require('../config/api')
 
 /*
  * Send a receipt message using the Send API.
