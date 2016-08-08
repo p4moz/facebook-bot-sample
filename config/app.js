@@ -270,7 +270,25 @@ function receivedMessage(event) {
   } else if (messageAttachments) {
     console.log(`Attachment`)
     console.log(messageAttachments)
-    sendTextMessage(senderID, "Message with attachment received");
+    // sendTextMessage(senderID, "Message with attachment received");
+    resolveMultipleAttachments(senderID, messageAttachments)
+  }
+}
+
+function resolveMultipleAttachments(senderID, attachments) {
+  attachments.map( attachment => {
+    return resolveAttachment(senderID, attachment)
+  })
+}
+
+function resolveAttachment(senderID, attachment) {
+  switch(attachment.type) {
+    case 'location':
+      sendTextMessage(senderID, `Latitud: ${attachment.payload.coordinates.lat}. Longitud: ${attachment.payload.coordinates.long}`)
+      break;
+    default:
+      sendTextMessage(senderID, "Message with attachment received");
+      break;
   }
 }
 
