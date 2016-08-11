@@ -12,7 +12,7 @@ const {
   receivedDeliveryConfirmation,
   receivedPostback,
   receivedMessageRead
-} = require('./config/app')
+} = require('./config/bootstrap')
 
 const app = express();
 
